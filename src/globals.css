@@ -1,0 +1,28 @@
+:root {
+  font-family: 'Micro 5', sans-serif !important;
+}
+
+html {
+  cursor: url("/tiny_chicken.png"), auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: 'Micro 5';
+  src: url('/fonts/Micro5-Regular.woff2') format('woff2'),
+       url('/fonts/Micro5-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-family: 'Micro 5', sans-serif !important; /* Force override */
+  color: var(--foreground);
+  background: var(--background);
+}
